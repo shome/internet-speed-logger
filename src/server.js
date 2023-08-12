@@ -27,7 +27,7 @@ module.exports = function startServer() {
         res.end();
       }
     })
-    .listen(3000);
+    .listen(3000, '0.0.0.0');
 };
 
 function respondWithFileInPath(response, path, contentType) {
